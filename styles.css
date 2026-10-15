@@ -2,10 +2,10 @@
 
 :root {
   --text: #1a1a1a;
-  --text-muted: #6b7280;
-  --accent: #2563eb;
-  --background: #ffffff;
-  --border: #e5e7eb;
+  --text-muted: #0d900f;
+  --accent: #c71818;
+  --background: #dfd881;
+  --border: #6b7280;
 }
 
 body {
@@ -28,4 +28,13 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem; }
+footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem;
+            /* Lab 11 ~ Task 4: Links style */
+            a {
+                color: var(--accent);
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+            }
+
+            a:hover { border-bottom-color: var(--accent); }
+}
