@@ -1,40 +1,85 @@
 /* Class 11 ~ Step 4: the basics */
 
 :root {
-  --text: #1a1a1a;
-  --text-muted: #0d900f;
-  --accent: #c71818;
-  --background: #dfd881;
-  --border: #6b7280;
+  --text: #cdcccc;
+  --text-muted: #e00505;
+  --accent: #fce704;
+  --background: #2c1801;
+  --border: #d44000;
 }
 
 body {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    color: var(--text);
-    background: var(--background);
-    line-height: 1.6;
-    max-width: 42rem;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--text);
+  background: var(--background);
+  line-height: 1.6;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
 }
 
-h1 { font-size: 2.25rem; margin-bottom: 1.1rem; margin-top: 0; }
+h1 {
+  font-size: 3.2rem; /* Class 12 ~ Step 2: my own scale*/
+  margin-bottom: 1.1rem;
+  margin-top: 0;
+}
 
-header p { color: var(--text-muted); font-size: 1.1rem; margin-top: 0; }
+header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-top: 0;
+}
 
 h2 {
-    margin-top: 2.25rem;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
 }
 
-footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem;
-            /* Lab 11 ~ Task 4: Links style */
-            a {
-                color: var(--accent);
-                text-decoration: none;
-                border-bottom: 1px solid transparent;
-            }
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
 
-            a:hover { border-bottom-color: var(--accent); }
+footer {
+  margin-top: 4rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  /* Lab 11 ~ Task 4: Links style */
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  a:hover {
+    border-bottom-color: var(--accent);
+  }
+}
+
+.portrait {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+ li {
+  margin-bottom: 0.5rem;
 }
