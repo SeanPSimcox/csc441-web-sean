@@ -102,6 +102,13 @@ header {
 }
 
 /* Class 13 ~ Step 3: the nav bar */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
 
 nav a {
   text-decoration: none;
