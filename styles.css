@@ -45,10 +45,15 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-p {
+main p {
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+}
+
+/* p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-}
+} */
 
 /* Lab 12 ~ Task 3: footer */
 footer {
@@ -85,16 +90,63 @@ section {
 ul {
   list-style: none;
   padding-left: 0;
-}
- li {
+ }
+
+li {
   margin-bottom: 0.75rem;
   padding-left: 1rem;
   border-left: 2px solid var(--accent);
 }
 
+nav li {
+  border-left: none;
+  padding-left: 0;
+}
+
 /* Lab 12 ~ Task 1: header side by side */
+/* Lab 12 ~ Task 4: let the header stack when there isn't room */
 header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Class 13 ~ Step 3: the nav bar */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  padding-bottom: .25rem;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* Lab 13 ~ Task 1: which page am I on */
+nav a.current {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Lab 13 ~ Task 4: serperate the bar from the header (change)*/
+nav {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+/* Lab 13 ~ Task 5: keyboard navigation indicator */
+nav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
