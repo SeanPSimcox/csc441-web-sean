@@ -138,7 +138,7 @@ nav a.current {
   color: var(--accent);
 }
 
-/* Lab 13 ~ Task 4: serperate the bar from the header (change)*/
+/* Lab 13 ~ Task 4: separate the bar from the header (change)*/
 nav {
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border);
