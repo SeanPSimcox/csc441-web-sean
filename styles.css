@@ -64,16 +64,16 @@ footer {
   align-items: center;
 }
 
-  /* Lab 11 ~ Task 4: Links style */
-  a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-  }
+/* Lab 11 ~ Task 4: Links style */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
 
-  a:hover {
-    border-bottom-color: var(--accent);
-  }
+a:hover {
+  border-bottom-color: var(--accent);
+}
 
 .portrait {
   width: 180px;
@@ -90,7 +90,7 @@ section {
 ul {
   list-style: none;
   padding-left: 0;
- }
+}
 
 li {
   margin-bottom: 0.75rem;
@@ -124,7 +124,7 @@ nav ul {
 nav a {
   text-decoration: none;
   font-weight: 700;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   border-bottom: 2px solid transparent;
 }
 
@@ -149,4 +149,26 @@ nav {
 nav a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+/* Class 14 ~ Step 2: the cards go in a row */
+/* Class 14 ~ Step 3: stack by default */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+/* Class 14 ~ Step 3.1: a rw when there's room */
+@media (min-width: 40rem) {
+  .cards {
+    flex-direction: row;
+  }
 }
