@@ -198,7 +198,7 @@ nav a:focus-visible {
 
 body.dark {
   --text: white;
-  --text-muted: silver;
+  --text-muted: rgba(192, 192, 192, 0.823);
   --accent: skyblue;
   --background: dimgrey;
   --border: #d44000;
