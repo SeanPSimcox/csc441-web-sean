@@ -15,6 +15,8 @@
     >
     <link rel="stylesheet" href="styles.css" >
     <link rel="icon" href="/icon-192.png" type="image/x-icon" >
+    <!-- Class 15: Step 1: my third file -->
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -25,6 +27,7 @@
             <li><a href="projects.html" class="current">Projects</a></li>
             <!-- Lab 13 ~ Task 3: one nav three pages -->
             <li><a href="now.html">Now</a></li>
+            <li><button id="theme-toggle" type="button">Toggle theme </button></li>
         </ul>
       </nav>
     <!-- Class 11: Step 2: the page content -->
@@ -47,23 +50,32 @@
       <!-- Class 14 ~ Step 1: a row of cards -->
        <div class="cards">
         <section class="card">
-          <h2>First project</h2>
-          <p>I have created several Java and C++ programs using object-oriented programming concepts in Netbeans and Codeblocks. These projects helped me learn classes, methods, and data structures.</p>
+          <h2>Coding Basics</h2>
+          <p>I have created several Java and C++ programs using object-oriented programming concepts in Netbeans and Codeblocks. 
+            These projects helped me learn classes, methods, and data structures. One of these most memorable was an Atm application.</p>
           </section>
         <section class="card">
-          <h2>Second project</h2>
-          <p>I designed and queried databases using MySQL Workbench. This project focused on table relationships, SQL queries, and data management.</p>
+          <h2>Database Design</h2>
+          <p>I designed and queried databases using MySQL Workbench. This project focused on table relationships, SQL queries, and data management. 
+            One of the most memorable being a tools database that I ran queries against.</p>
         </section>
         <section class="card">
-          <h2>Third project</h2>
-          <p>I developed a simple website using HTML and CSS and created an Android application using Kotlin, Android Studio, and Jetpack Compose. Both projects helped me gain experience with responsive design, user interface development, and user interaction techniques.</p>
+          <h2>Mobile App Development</h2>
+          <p>I developed a simple website using HTML and CSS and created an Android application using Kotlin, Android Studio, and Jetpack Compose. 
+            Both projects helped me gain experience with responsive design, user interface development, and user interaction techniques. 
+            One of the most memorable was the Android app I built for archiving Network ports.</p>
         </section>
        </div>
     </main>
 
     <!--Lab 12 ~ Task 3: two things in the footer -->
     <footer>
-      <p>2026 Sean P Simcox</p>
+      <!-- Lab 15: Task 1: the year, written by JavaScript my second file -->
+      <p><span id="year"></span>&copy; Sean P Simcox</span></p>
+
+      <!-- Lab 15 ~ Task 5: back-to-top link -->
+      <p><button id="back-to-top" type="button">Back to Top</button></p>
+
       <!-- Lab 11 ~ Task 3: add a link to your GitHub profile -->
       <a
         href="https://github.com/SeanPSimcox/csc441-web-sean.git"
