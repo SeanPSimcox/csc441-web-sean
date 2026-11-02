@@ -1,5 +1,9 @@
-/* Class 11 ~ Step 4: the basics */
+/* Class 16 ~ Step 3: padding counts inside width, on top of it */
+*  {
+  box-sizing: border-box;
+}
 
+/* Class 11 ~ Step 4: the basics */
 :root {
   --text: #cdcccc;
   --text-muted: #e00505;
@@ -211,4 +215,18 @@ button {
 
 button:hover {
   opacity: 0.8;
+}
+
+/* Class 16 ~ Step 3: the form */
+form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+form input, form textarea {
+  font: inherit;
+  width: 100;
+  padding: 0.5rem;
+  border: 1px solid var(--background);
 }

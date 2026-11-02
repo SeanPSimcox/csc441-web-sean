@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Class 16 ~ Step 1: my contact page -->
+    <title>Contact - Sean P Simcox</title>
+    <!-- Class 12 ~ Step 1: a typeface I chose -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com"  >
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="icon" href="/icon-192.png" type="image/x-icon" >
+    <!-- Class 15: Step 1: my third file -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Class 13 ~ Step 2: navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <!-- Lab 13 ~ Task 3: one nav three pages -->
+        <li><a href="now.html">Now</a></li>
+        <!-- Class 16 ~ Step 1: the contact link -->
+        <li><a href="contact.html" class="current">Contact</li></li>
+        <!-- Lab 15: Step 3: the theme button -->
+        <li><button id="theme-toggle" type="button"> Toggle theme </button></li>
+      </ul>
+    </nav>
+    <!-- Class 11: Step 2: the page content -->
+    <!-- Lab 11 ~ Task 1: make it personal -->
+    <!-- Lab 12 ~ Task 1: group the text so it stacks beside the photo -->
+    <header>
+      <!-- Class 12 ~ Step 3: an image -->
+      <img
+        src="images/ResizedHeadshot.jpg"
+        alt="Portrait of Sean P Simcox"
+        class="portrait"
+      >
+      <div> class="header-text"
+        <h1>Contact</h1>
+        <p>If you would like to reach out to me to follow up about any questions you might have.</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Class 16 ~ Step 2: a form -->
+       <form id="contact=form">
+        <p>
+            <label for="name">Sean P Simcox</label>
+            <input id="name" name="name" type="text" required>
+        </p>
+       </form>
+    </main>
+
+    <!--Lab 12 ~ Task 3: two things in the footer -->
+    <footer>
+      <!-- Class 15: Step 2: the year, written by JavaScript -->
+      <p><span id="year"></span>&copy; Sean P Simcox</span></p>
+
+      <!-- Lab 15 ~ Task 5: back-to-top link -->
+      <p><button id="back-to-top" type="button">Back to Top</button></p>
+
+      <!-- Lab 11 ~ Task 3: add a link to your GitHub profile -->
+      <a
+        href="https://github.com/SeanPSimcox/csc441-web-sean.git"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub Profile
+      </a>
+    </footer>
+  </body>
+</html>
