@@ -1,8 +1,6 @@
-Notes
-=====
+<h1 align="center">Notes</h1>
 
----
-
+⚔️ ------------------------------------------------------------------------------------------------------------------------------------🛡️-----------------------------------------------------------------------------------------------------------------------------------⚔️
 ## Week 8, Friday
 
 The header was squished on a phone.
@@ -46,7 +44,7 @@ I used Copilot to answer questions about HTML, CSS, Flexbox, media queries, Git,
 
 ## Week 10, Friday
 
-1) event.prventDefault() stops the page from refreshing when the form is submitted and losing everything.
+1) event.preventDefault() stops the page from refreshing when the form is submitted and losing everything.
 
 2) JavaScript was trying to use something that wasn't on the page. The if statemenet checks if it exists first so it doesn't blow up.
 
