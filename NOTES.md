@@ -10,7 +10,7 @@ I fixed it by adding flex-wrap so it can stack.
 
 2) I set defaults in styles.css for everything to reduce redundancy and mistakes throughout building each page. This allowed me to make changes in one location and have them automatically apply to all three pages, instead of updating each page separately.
 
-3) One thing I don't know how to change yet is adding transitions and movement to my pages. 
+3) One thing I don't know how to change yet is adding transitions and movement to my pages.
 
 ## Week 9, Friday
 
@@ -23,4 +23,17 @@ I fixed it by adding flex-wrap so it can stack.
 4) The narrow layout is the default because most phones have smaller screens. The media query changes the layout when there is more room available on larger screens.
 
 ## AI use
+
 I used Copilot to answer questions about HTML, CSS, Flexbox, media queries, Git, and to verify that my work met the assignment requirements. I wrote and modified the code and content myself.
+
+## Week 10, Wednesday
+
+1) The HTML is the visualization of the code. The CSS formatting and colorization of the code. The JavaScript is the functions/methods of the code.
+
+2) I don't know what 'defer' is doing.
+
+3) Dark mode was passed from a parent to a child making it so we didn't have to hard code every instance.
+
+4) The if statement declaring the value of x and not comparing it. we fixed it by using the proper expression.
+
+5) The dark mode won't pass between pages but light mode will. There is a syntax error I have not been able to correct yet.
