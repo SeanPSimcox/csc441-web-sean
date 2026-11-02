@@ -49,14 +49,39 @@ const contactForm = document.querySelector("#contact-form");
 
 // Class 16 ~ Step 4.1 handle the submit
 if (contactForm) {
-const formStatus = document.querySelector("#form-status");
+    const formStatus = document.querySelector("#form-status");
+    
+    // Lab 16 ~ Task 4: live character count
+    const messageBox = document.querySelector("#message");
+    const characterCount = document.querySelector("#character-count");
 
-contactForm.addEventListener("submit", function(event) {
-    event.preventDefault()
+    messageBox.addEventListener("input", function () {
+        characterCount.textContent = "Characters: " + messageBox.value.length;
+    });
 
-    const name= document.querySelector("#name").value;
+    // Lab 16 ~ Task 1: my own check before accepting it
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault()
 
-    formStatus.textContent = "Thanks, " + name + ". Your message is being carried to it's destination by carrier pigeon.";
-    contactForm.reset();
-});
+        const name = document.querySelector("#name").value;
+        const message = document.querySelector("#message").value.trim();
+
+        if (message.length < 10) {
+            formStatus.textContent = "Please make your message at least 10 characters long.";
+            formStatus.classList.add("error");
+            return;
+        }
+
+        formStatus.classList.remove("error");
+        formStatus.textContent = "Thanks, " + name + ". Your message is being carried to it's destination by carrier pigeon.";
+        contactForm.reset();
+    });
+
+    // Lab 16 ~ Task 2: clear the error once they start fixing it
+    contactForm.addEventListener("input", function () {
+        if (formStatus.classList.contains("error")) {
+            formStatus.textContent = "";
+            formStatus.classList.remove("error");
+        }
+    });
 }

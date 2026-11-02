@@ -20,14 +20,14 @@
     <!-- Class 13 ~ Step 2: navigation -->
     <nav>
       <ul>
-        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <!-- Lab 13 ~ Task 3: one nav three pages -->
         <li><a href="now.html">Now</a></li>
         <!-- Class 16 ~ Step 1: the contact link -->
-        <li><a href="contact.html" class="current">Contact</li></li>
+        <li><a href="contact.html" class="current">Contact</a></li>
         <!-- Lab 15: Step 3: the theme button -->
-        <li><button id="theme-toggle" type="button"> Toggle theme </button></li>
+        <li><button id="theme-toggle" type="button"> Toggle Theme </button></li>
       </ul>
     </nav>
     <!-- Class 11: Step 2: the page content -->
@@ -40,7 +40,7 @@
         alt="Portrait of Sean P Simcox"
         class="portrait"
       >
-      <div> class="header-text"
+      <div class="header-text">
         <h1>Contact</h1>
         <p>If you would like to reach out to me to follow up about any questions you might have.</p>
       </div>
@@ -48,25 +48,42 @@
 
     <main>
       <!-- Class 16 ~ Step 2: a form -->
-       <form id="contact=form">
-        <p>
-            <label for="name">Sean P Simcox</label>
-            <input id="name" name="name" type="text" required>
-        </p>
-       </form>
+       <form id="contact-form">
+    <p>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+    </p>
+
+    <p>
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" required>
+    </p>
+
+    <p>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </p>
+
+    <!-- Lab 16 ~ Task 4: live character count-->
+     <p id="character-count">Characters: 0</p>
+
+    <button type="submit">Send</button>
+</form>
+
+<p id="form-status" role="status"></p>
     </main>
 
     <!--Lab 12 ~ Task 3: two things in the footer -->
     <footer>
       <!-- Class 15: Step 2: the year, written by JavaScript -->
-      <p><span id="year"></span>&copy; Sean P Simcox</span></p>
+      <p>&copy; <span id="year"></span> Sean P Simcox</p>
 
       <!-- Lab 15 ~ Task 5: back-to-top link -->
       <p><button id="back-to-top" type="button">Back to Top</button></p>
 
       <!-- Lab 11 ~ Task 3: add a link to your GitHub profile -->
       <a
-        href="https://github.com/SeanPSimcox/csc441-web-sean.git"
+        href="https://github.com/SeanPSimcox"
         target="_blank"
         rel="noopener"
       >
