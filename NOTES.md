@@ -1,4 +1,7 @@
-# Notes
+Notes
+=====
+
+---
 
 ## Week 8, Friday
 
