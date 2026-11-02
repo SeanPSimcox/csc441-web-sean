@@ -1,3 +1,5 @@
+# Notes
+
 ## Week 8, Friday
 
 The header was squished on a phone.
@@ -37,3 +39,16 @@ I used Copilot to answer questions about HTML, CSS, Flexbox, media queries, Git,
 4) The if statement declaring the value of x and not comparing it. we fixed it by using the proper expression.
 
 5) The dark mode won't pass between pages but light mode will. There is a syntax error I have not been able to correct yet.
+
+
+## Week 10, Friday
+
+1) event.prventDefault() stops the page from refreshing when the form is submitted and losing everything.
+
+2) JavaScript was trying to use something that wasn't on the page. The if statemenet checks if it exists first so it doesn't blow up.
+
+3) I made the messafe require at least 10 characters. If somebody is contacting me, they can put in at least a little effort.
+
+4) I changed the navigation so it stays horizontal and wraps instead of stacking. I also fixed the form width and made the Send button bigger so it is easier to use on mobile with big fingers.
+
+5) Library implementation for a method to handle the message to its location.
