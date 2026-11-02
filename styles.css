@@ -1,5 +1,5 @@
 /* Class 16 ~ Step 3: padding counts inside width, on top of it */
-*  {
+* {
   box-sizing: border-box;
 }
 
@@ -10,6 +10,7 @@
   --accent: #fce704;
   --background: #2c1801;
   --border: #d44000;
+  --error: crimson;
 }
 
 body {
@@ -131,8 +132,10 @@ nav ul {
   list-style: none;
   padding-left: 0;
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  /* Lab 16 ~ Task 3: no more stacking */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -201,6 +204,7 @@ body.dark {
   --accent: skyblue;
   --background: dimgrey;
   --border: #d44000;
+  --error: lightsalmon;
 }
 
 button {
@@ -224,9 +228,20 @@ form label {
   margin-bottom: 0.25rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   font: inherit;
-  width: 100;
+  width: 100%;
   padding: 0.5rem;
-  border: 1px solid var(--background);
+  border: 1px solid var(--border);
+}
+
+/* Lab 16 ~ Task 1: error message state */
+#form-status.error {
+  color: var(--error);
+}
+
+/* Class 16 ~ Step 3: the form button */
+form button {
+  padding: 0.75rem 1.5rem;
 }
