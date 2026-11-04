@@ -53,3 +53,7 @@ I used Copilot to answer questions about HTML, CSS, Flexbox, media queries, Git,
 4) I changed the navigation so it stays horizontal and wraps instead of stacking. I also fixed the form width and made the Send button bigger so it is easier to use on mobile with big fingers.
 
 5) Library implementation for a method to handle the message to its location.
+
+## Week 11, Wednesday
+
+1) Live site: https://seansimcox.netlify.app/

@@ -7,7 +7,8 @@
 :root {
   --text: #cdcccc;
   --text-muted: #e00505;
-  --accent: #fce704;
+  /* Lab 17 ~ Task 3: something I can see */
+  --accent: #fc049d;
   --background: #2c1801;
   --border: #d44000;
   --error: crimson;
