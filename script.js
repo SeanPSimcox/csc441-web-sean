@@ -50,7 +50,7 @@ const contactForm = document.querySelector("#contact-form");
 // Class 16 ~ Step 4.1 handle the submit
 if (contactForm) {
     const formStatus = document.querySelector("#form-status");
-    
+
     // Lab 16 ~ Task 4: live character count
     const messageBox = document.querySelector("#message");
     const characterCount = document.querySelector("#character-count");
