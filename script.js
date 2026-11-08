@@ -73,8 +73,8 @@ if (contactForm) {
         }
 
         formStatus.classList.remove("error");
-        formStatus.textContent = "Thanks, " + name + ". Your message is being carried to it's destination by carrier pigeon.";
-        contactForm.reset();
+        formStatus.textContent = "Thanks, " + name + ". Your message is being flown to it's destination by carrier pigeon.";
+        contactForm.submit();
     });
 
     // Lab 16 ~ Task 2: clear the error once they start fixing it
