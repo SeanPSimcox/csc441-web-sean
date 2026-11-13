@@ -1,0 +1,7 @@
+[
+  { "title": "Raspberry Pi", "category": "Hardware" },
+  { "title": "Wireshark", "category": "Software" },
+  { "title": "Kali Linux", "category": "Cybersecurity" },
+  { "title": "VS Code", "category": "Development" },
+  { "title": "Github", "category": "Development" }
+]

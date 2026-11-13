@@ -66,6 +66,18 @@ I used Copilot to answer questions about HTML, CSS, Flexbox, media queries, Git,
 
 3. GET stuff.JSON stuff.
 
-4. Secrets should stay secret.shhhhh.
+4. Secrets should stay safe.shhhhh.
 
 5. It got what it requested.
+
+## Week 12, Friday -- Lab 20
+
+1. fetch() asks for the stuff. response.json() translates the stuff.
+
+2. textContent shows the stuff. It doesn't run the stuff.
+
+3. Nothing shows up and it says "No items yet."
+
+4. It breaks and complains.
+
+5. I changed the database, hit Refresh, and it changed itself.
