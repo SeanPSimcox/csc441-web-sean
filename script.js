@@ -16,6 +16,8 @@ if (themeButton) {
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
         themeButton.textContent = "Light";
+    } else {
+        themeButton.textContent = "Dark";
     }
 
     // Lab 15 ~ Task 3 and 4: the label swaps, and the choice is remembered
