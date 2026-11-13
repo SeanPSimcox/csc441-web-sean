@@ -57,3 +57,15 @@ I used Copilot to answer questions about HTML, CSS, Flexbox, media queries, Git,
 ## Week 11, Wednesday
 
 1) Live site: https://seansimcox.netlify.app/
+
+## Week 12, Wednesday
+
+1. Records.
+
+2. Tables stores objects, API acceses them.
+
+3. GET stuff.JSON stuff.
+
+4. Secrets should stay secret.shhhhh.
+
+5. It got what it requested.
