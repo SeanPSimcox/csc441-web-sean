@@ -1,14 +1,16 @@
-// Class 20 · Step 3: find the page elements
+// Lab 20 · Task 2: final rendering with optional images and refresh
 const showcaseGrid = document.querySelector("#showcase-grid");
 const showcaseStatus = document.querySelector("#showcase-status");
 const showcaseCount = document.querySelector("#showcase-count");
+const refreshButton = document.querySelector("#showcase-refresh");
 
-// Class 20 · Step 4: GET JSON and create HTML cards
 async function loadShowcase() {
   if (!showcaseGrid || !showcaseStatus) return;
 
   showcaseStatus.textContent = "Loading from Supabase...";
   showcaseGrid.replaceChildren();
+
+  if (showcaseCount) showcaseCount.textContent = "";
 
   try {
     const url =
@@ -26,6 +28,21 @@ async function loadShowcase() {
       const card = document.createElement("article");
       card.className = "showcase-card";
 
+      if (item.image_url && item.image_url.startsWith("https://")) {
+        const photo = document.createElement("img");
+        photo.className = "showcase-photo";
+        photo.src = item.image_url;
+        photo.alt = "Photo for " + item.title;
+        photo.loading = "lazy";
+
+        photo.addEventListener("error", () => photo.remove());
+
+        card.appendChild(photo);
+      }
+
+      const body = document.createElement("div");
+      body.className = "showcase-body";
+
       const title = document.createElement("h3");
       title.textContent = item.title;
 
@@ -35,7 +52,8 @@ async function loadShowcase() {
       const description = document.createElement("p");
       description.textContent = item.description;
 
-      card.append(title, category, description);
+      body.append(title, category, description);
+      card.appendChild(body);
       showcaseGrid.appendChild(card);
     }
 
@@ -43,9 +61,7 @@ async function loadShowcase() {
       ? "Loaded successfully."
       : "No items yet.";
 
-    if (showcaseCount) {
-      showcaseCount.textContent = items.length + " items";
-    }
+    if (showcaseCount) showcaseCount.textContent = items.length + " items";
   } catch (error) {
     showcaseStatus.textContent = "Could not load the items. Check the Console.";
 
@@ -53,5 +69,6 @@ async function loadShowcase() {
   }
 }
 
-// Run only on the page that has a showcase container
 if (showcaseGrid && showcaseStatus) loadShowcase();
+
+if (refreshButton) refreshButton.addEventListener("click", loadShowcase);
